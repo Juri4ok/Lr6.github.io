@@ -1,0 +1,64 @@
+{
+  "products" : [
+    {
+      "note" : "new",
+      "category" : "рюкзаки",
+      "image" : "pics/backpack.jpg",
+      "name": "Рюкзак Terra Incognita Action 35",
+      "link" : "https://terraincognita.com.ua/ryukzak-terra-incognita-action-35/",
+      "oldPrice" : null,
+      "price" : null,
+      "available" : false
+    },
+    {
+      "note" : null,
+      "category" : "намети",
+      "image" : "pics/namet.jpg",
+      "name": "Намет Terra Incognita Adria 2",
+      "link" : "https://terraincognita.com.ua/namet-terra-incognita-adria-2-10987/",
+      "oldPrice" : 7254,
+      "price" : 6957,
+      "available" : true
+    },
+    {
+      "note" : "hit",
+      "category" : "спальники",
+      "image" : "pics/spalnik.jpg",
+      "name": "Спальник Terra Incognita Alaska",
+      "link" : "https://terraincognita.com.ua/spalnik-terra-incognita-alaska/",
+      "oldPrice" : 5000,
+      "price" : 4180,
+      "available" : true
+    },
+    {
+      "note" : "hit",
+      "category" : "килимки",
+      "image" : "pics/kylym.jpg",
+      "name": "Килимок Terra Incognita Hike Mat",
+      "link" : "https://terraincognita.com.ua/kovrik-terra-incognita-hike-mat-27104/",
+      "oldPrice" : null,
+      "price" : 1030,
+      "available" : true
+    },
+    {
+      "note" : null,
+      "category" : "Кросівки",
+      "image" : "pics/sneakers.jpg",
+      "name": "Чорні кросівки",
+      "link" : "https://isuit.it/en/i01-isaia-black-cotton-sneakers-amalfi-snkmg3-knt01990.html",
+      "oldPrice" : 850,
+      "price" : 425,
+      "available" : true
+    },
+    {
+      "note" : "new",
+      "category" : "Рукавиці",
+      "image" : "pics/gloves.jpg",
+      "name": "Коричневі шкіряні рукавиці",
+      "link" : "https://isuit.it/en/k02-kiton-brown-leather-suede-gloves-gloves-12-00001.html",
+      "oldPrice" : 500,
+      "price" : 250,
+      "available" : true
+    }
+  ]
+}
