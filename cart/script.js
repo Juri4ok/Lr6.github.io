@@ -20,7 +20,7 @@ function displayCartItems() {
         var productPrice = item.price;
         var total = item.quantity * productPrice;
 
-        row.innerHTML = "<td>" + (index + 1) + "</td><td><a href='" + productLink + "'>" + productName + "</a></td><td>" + productPrice + " грн</td><td><input type='number' value='" + item.quantity + "' min='1' onchange='updateQuantity(" + index + ", this.value)'></td><td>" + total + " грн</td><td><button class='delete-btn' onclick='deleteItem(" + index + ")'>Видалити</button></td>";
+        row.innerHTML = "<td>" + (index + 1) + "</td><td><a href='" + productLink + "'>" + productName + "</a></td><td>" + productPrice + " грн</td><td><input type='number' value='" + item.quantity + "' min='1' onchange='updateQuantity(" + index + ", this.value)'></td><td>" + total + " грн</td><td><button class='delete-btn' onclick='deleteItem(" + index + ")'>Вилучити</button></td>";
         cartTableBody.appendChild(row);
     });
 }
@@ -40,11 +40,14 @@ function checkout() {
 }
 
 function deleteItem(index) {
-    var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-    cartItems.splice(index, 1);
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
-    displayCartItems();
-    location.reload();
+    var confdel = confirm("Ви дійсно хочете вилучити цей товар з корзини?");
+    if (confdel) {
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems.splice(index, 1);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        displayCartItems();
+        location.reload();
+    }
 }
 // function displayCartItems() {
 //     var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
